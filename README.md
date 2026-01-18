@@ -567,16 +567,30 @@ Copy code
 ```bash
 npm install
 npm run start
-This **README + app structure + live features** will make Axis **look like a real, production-ready dashboard**.
 
----
-
-Axis is now **complete, polished, and portfolio-ready**.  
-It ticks **all boxes**: live data, authentication, cloud sync, smooth UX, modern architecture, and optional AI features.  
-
----
-
-If you want, I can **also create an export-ready App Store / Play Store build plan**, including icons, splash screen, and Expo configuration, so you can literally **ship Axis**.  
-
-Do you want me to do that next?
-
+{
+  "expo": {
+    "name": "Axis",
+    "slug": "axis",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ethan.axis",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "com.ethan.axis",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      }
+    }
+  }
+}
